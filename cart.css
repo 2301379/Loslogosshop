@@ -1,0 +1,352 @@
+/* 基本のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    margin: 0;
+}
+
+/* コンテナ */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* トップバー */
+.top-bar {
+    display: flex;
+    /* 要素を横並びに */
+    justify-content: space-between;
+    /* 左右にスペースを作る */
+    align-items: center;
+    /* アイテムを垂直中央揃え */
+    width: 100%;
+    padding: 20px;
+    background-color: #4d4b4b;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+/* サイトタイトル */
+.site-title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+/* 商品コンテナ */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 横に4つ並べる */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+}
+
+h3 {
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-message {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px;
+}
+
+/* テーブル全体のスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* テーブルヘッダーのスタイル */
+table th {
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* テーブル行のスタイル */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 奇数行と偶数行の色分け */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* 合計金額のスタイル */
+h2 {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* 削除リンクのスタイル */
+a {
+    color: #ff4d4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d9363e;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+p {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* カート全体のスタイル */
+.cart-contents {
+    width: 500px;
+    height: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 見出しのスタイル */
+.cart-contents h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* カート内の商品リスト */
+.cart-contents ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-contents ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 商品名、価格、数量のスタイル */
+.cart-contents ul li br {
+    line-height: 1.8;
+}
+
+.cart-contents ul li:first-child {
+    font-weight: bold;
+}
+
+/* 商品リスト内の文字色と余白 */
+.cart-contents ul li span {
+    display: block;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* 視覚的なホバー効果 */
+.cart-contents ul li:hover {
+    background-color: #f4f4f4;
+    border-color: #bbb;
+}
+
+.cart-contents ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    /* 表示される最大高さを設定 */
+    overflow-y: auto;
+    /* 縦スクロールを有効化 */
+    border: 1px solid #ddd;
+    /* 枠線を追加（オプション） */
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button {
+    background-color: #4d4b4b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* メディアクエリでモバイル対応 */
+@media (max-width: 600px) {
+    .cart-contents ul li {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .cart-contents h3 {
+        font-size: 18px;
+    }
+}
+
+/* フォーム全体のスタイル */
+.info {
+    margin: 20px auto;
+    max-width: 1300px;
+    max-height: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 各行のスタイル */
+  .info-row {
+    margin-bottom: 15px;
+  }
+  
+  .info-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .info-row input {
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .info-row input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* ボタンのスタイル */
+  .back-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  }
+  
+
+.payinfo {
+    width: 400px; /* 親要素の幅に合わせて拡大 */
+    max-width: 800px; /* テキストボックスの最大幅を800pxに拡大 */
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    box-sizing: border-box; /* パディングを含めた幅計算 */
+}

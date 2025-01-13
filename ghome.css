@@ -1,0 +1,105 @@
+/* 基本のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    margin: 0;
+}
+
+/* コンテナ */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* トップバー */
+.top-bar {
+    display: flex;
+    /* 要素を横並びに */
+    justify-content: space-between;
+    /* 左右にスペースを作る */
+    align-items: center;
+    /* アイテムを垂直中央揃え */
+    width: 100%;
+    padding: 20px;
+    background-color: #4d4b4b;
+    color: #ffffff;
+    margin-bottom: 50px;
+  
+}
+/* サイトタイトル */
+.site-title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* カートボタン */
+.cart-btn {
+    background-color: #4d4b4b; /* トップバーと同じ色 */
+    color: white; /* 文字色は白に */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+/* カートボタンのホバー時の色 */
+.cart-btn:hover {
+    background-color: #45a049; /* クリック時に色が少し変わる */
+}
+
+
+/* 商品コンテナ */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 横に4つ並べる */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+
+h3{
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,214 @@
+/* 基本のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    margin: 0;
+}
+
+/* コンテナ */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* トップバー */
+.top-bar {
+    display: flex;
+    /* 要素を横並びに */
+    justify-content: space-between;
+    /* 左右にスペースを作る */
+    align-items: center;
+    /* アイテムを垂直中央揃え */
+    width: 100%;
+    padding: 20px;
+    background-color: #4d4b4b;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+/* サイトタイトル */
+.site-title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* カートボタン */
+.cart-btn {
+    background-color: #4d4b4b; /* トップバーと同じ色 */
+    color: white; /* 文字色は白に */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+/* カートボタンのホバー時の色 */
+.cart-btn:hover {
+    background-color: #45a049; /* クリック時に色が少し変わる */
+}
+
+/* 商品コンテナ */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 1200px;
+    width: 100%;
+    grid-gap: 80px;
+    /* カード間にスペースを追加 */
+}
+
+
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.product-card {
+    border-radius: 8px;
+    text-align: center;
+    background-color: #181818;
+    margin-right: 20px;
+    /* 右側に余白を追加 */
+}
+
+.product-info {
+    max-width: 700%;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: transparent;
+    /* 背景を透明にする */
+    border: none;
+    /* 枠線がある場合は削除 */
+    margin-top: 50px;
+    /* 画像と情報の間に上下のスペースを追加 */
+}
+
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2A3B76;
+}
+
+.rating,
+.bestseller {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.bestseller {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+.delivery-info,
+.points-info,
+.offers-info,
+.business-info,
+.card-info {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.note {
+    font-size: 12px;
+    color: #555;
+}
+
+/* メイン画像コンテナ */
+/* メイン画像コンテナ */
+.main-image-container {
+    width: 500px;
+    /* 固定幅 */
+    height: 500px;
+    /* 固定高さ */
+    overflow: hidden;
+    /* 画像が固定枠からはみ出さないようにする */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 100px;
+    /* サムネイルとの間に少しスペース */
+    background-color: transparent;
+    /* 背景を透明にする */
+    border: none;
+    /* 枠線がある場合は削除 */
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* サムネイル間のスペース */
+}
+
+
+
+/* サムネイル */
+.thumbnail {
+    width: auto;
+    height: auto;
+    max-width: 100px; /* サムネイルの最大幅 */
+    max-height: 100px; /* サムネイルの最大高さ */
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    /* ホバー時の拡大を少し控えめに */
+}
+
