@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ホーム画面(ゲスト)</title>
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 
 <body>
     <div class="container">
         <div class="top-bar">
-            <a href="index.php">
+            <a href="index.html">
                 <span class="site-title">𝓛𝓸𝓼𝓵𝓸𝓰𝓸𝓼</span>
             </a>
         </div>
